@@ -1,0 +1,367 @@
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row > .column_img {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .column_img {
+    float: left;
+    width: 25%;
+  }
+
+  .width_img {
+    width: 100%;
+    height: 20% !important;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 100px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color: slategrey
+  }
+  
+  img {
+    margin-bottom: -4px;
+    height: 350px !important;
+    border:  double rgb(255, 255, 255) 12px;
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+
+
+ /* comment box */
+
+  .wrapper{
+    width:400px;
+    margin:10px auto;
+  }
+  
+  fieldset{
+    padding:10px;
+    background:black;
+  }
+  .form_grp{
+    margin-bottom:10px;
+  }
+  label{
+    width:100%;
+    height:32px;
+    line-height:32px;
+    display:block;
+    margin-bottom:10px;
+    font-size:18px;
+    color:#fff;
+   
+  }
+  textarea{
+    width:100%;
+    height:100px;
+    padding:10px;
+    border:1px solid #eee;
+    resize:none;
+  }
+  button{
+    padding:5px 46px;
+    background-color:#5ff300;
+    color:#fff;
+    float:right;
+  }
+  .viewCmnt{
+    clear:both;
+    overflow:hidden;
+    position:relative;
+    background:#c8e7fb;
+    border-bottom:1px solid black;
+  }
+  .viewCmnt p {
+    width:100%;
+    float:left;
+    padding:10px;
+    font-size:14px;
+    line-height:20px;
+    }
+  .edit, .delete{
+    position:absolute;
+    width:20px;
+    height:20px;
+    display:none;
+    cursor:pointer;
+    bottom:5px;
+    padding:2px;
+     }
+  .viewCmnt:hover .edit, .viewCmnt:hover .delete{
+    display:block;
+  }
+  .edit{
+    right:26px;  background:url(https://cdn4.iconfinder.com/data/icons/miu/22/editor_pencil_pen_edit_write_-16.png) no-repeat center #0e7ec7;
+  }
+  .delete{
+    right:5px;
+    background:url(https://cdn2.iconfinder.com/data/icons/flat-ui-icons-24-px/24/cross-24-16.png) no-repeat center #0e7ec7;
+    z-index:2;
+  }
+  
+
+   /* Button used to open the contact form - fixed at the bottom of the page */
+   .open-button {
+
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+
+    bottom: 23px;
+    right: 28px;
+    
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background: gainsboro;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.h1_title{
+  color: aliceblue;text-align: center;font-weight: bolder;font-size: 38px;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    margin-bottom: -14px;
+    height: 100px !important;
+    border:  double white 2px;
+  }
+.h1_title{
+  color: aliceblue;text-align: center;font-weight: bolder;font-size: 18px;
+}
+
+button{
+  padding:18px 25px;
+  color:#fff;
+  float:right;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 100px;
+  right: -4px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.prev,
+.next {
+  margin-top: 30px;
+}
+
+.column_img{
+  width: 55%;
+}
+.row > .column_img {
+  padding-left: 85px;
+  padding-bottom: 24px;
+}
+
+* {
+  box-sizing: content-box;
+}
+
+.form-container input[type=text]{
+  padding: 6px;
+}
+
+.form-container .btn{
+  padding: 4px;
+  height: 35px;
+}
+.form-popup{
+  right: 23px;
+  width: 86%;
+}
+.left{
+  padding-left: 23px;
+}
+label{
+  padding-left: 180px;
+}
+textarea{
+  width: 85%;
+  height: 86px;
+  padding: 10px;
+  padding-left: 26px;
+}
+fieldset{
+  width: 10%;
+  padding: 25px;
+}
+
+
+}

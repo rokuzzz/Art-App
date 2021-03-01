@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Art Page</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="./css/style2.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">
+      <a href="index.html">Legend<em> Arts</em></a>
+    </div>
+  </nav>
+
+  <div class="page-heading">
+    <div class="container">
+      <div class="heading-content">
+        <h1>Art <em> Page</em></h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Navi -->
+  <ul class="topnav">
+    <li><a id="HomeBtn" href="#home" onClick="location.href='index.html'">Home</a></li>
+    <li><a id="ArtBtn" class="active" href="#news" onClick="location.href='art.html'">Art</a></li>
+    <li class="right"><a id="AboutBtn" href="#about" onClick="location.href='about.html'">About Us</a>
+    
+    </li>
+    <li id="log-out" class="right" style="display: none;"><a id="LogoutBtn" href="#log-out">Log out<p id="user-info">
+        </p></a></li>
+  </ul>
+
+
+  
+  <div id="myModalLogin" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h3>Login</h3>
+      </div>
+      <div class="modal-body">
+        <div class="forms" id="login-wrapper">
+          <div class="form-wrapper">
+
+            <form id="login-form" class="light-border">
+              <div>
+                <label>Email:</label>
+                <input class="light-border" type="text" name="username" />
+              </div>
+              <div>
+                <label>Password:</label>
+                <input class="light-border" type="password" name="password" />
+              </div>
+              <div>
+                <button class="light-border" type="submit">Log In</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="myModalRegister" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h3>Register</h3>
+      </div>
+      <div class="modal-body">
+        <div class="form-wrapper">
+          <form class="light-border" id="add-user-form">
+            <input class="light-border" type="text" name="name" pattern=".{3,}" placeholder="Name" required>
+            <input class="light-border" type="email" name="username" placeholder="email" required>
+            <input class="light-border" type="password" name="password" pattern="(?=.*[A-Z]).{8,}"
+              placeholder="Password" required>
+            <button class="light-border" type="submit">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Photo grid -->
+
+  <div class="row test2">
+
+  </div>
+
+  <div id="myImgModal" class="modal">
+    <span class="close cursor" onclick="closeImgModal()">&times;</span>
+    <div id="load_mySlides" class="modal-content">
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <h1 class="h1_title">
+    Login to upload your own art
+  </h1>
+
+ 
+  <div id="public_static_view">
+    <div class="row">
+      <div class="column_img">
+        <img src="img/image1.jpg" style="width:100%" onclick=showAlert() class="hover-shadow cursor">
+      </div>
+      <div class="column_img">
+        <img src="img/image2.jpg" style="width:100%" onclick=showAlert() class="hover-shadow cursor">
+      </div>
+      <div class="column_img">
+        <img src="img/image3.jpeg" style="width:100%" onclick=showAlert() class="hover-shadow cursor">
+      </div>
+      <div class="column_img">
+        <img src="img/image4.jpg" style="width:100%" onclick=showAlert() class="hover-shadow cursor">
+      </div>
+      <div class="column_img">
+        <img src="img/image5.jpg" style="width:100%" onclick=showAlert() class="hover-shadow cursor">
+      </div>
+      <div class="column_img">
+        <img src="img/image6.jpg" style="width:100%" onclick=showAlert() class="hover-shadow cursor">
+      </div>
+      <div class="column_img">
+        <img src="img/image7.jpg" style="width:100%" onclick=showAlert() class="hover-shadow cursor">
+      </div>
+      <div class="column_img">
+        <img src="img/image8.jpg" style="width:100%" onclick=showAlert() class="hover-shadow cursor">
+      </div>
+      <div class="column_img">
+        <img src="img/image9.jpg" style="width:100%" onclick=showAlert() class="hover-shadow cursor">
+      </div>
+      <div class="column_img">
+        <img src="img/image10.jpg" style="width:100%" onclick=showAlert() class="hover-shadow cursor">
+      </div>
+      <div class="column_img">
+        <img src="img/image11.jpg" style="width:100%" onclick=showAlert() class="hover-shadow cursor">
+      </div>
+      <div class="column_img">
+        <img src="img/image12.jpg" style="width:100%"  onclick=showAlert() class="hover-shadow cursor">
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="container-fluid">
+      <div class="col-md-12">
+        <p>Copyright &copy; 2020
+
+          | Designed by Legend Group</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/serialize.js"></script>
+
+  
+
+<script>
+    function showAlert() {
+    var myText = "Please login first!";
+    alert (myText);
+  }
+</script>
+</body>
+
+</html>
